@@ -5,6 +5,7 @@
         "database": "dbpostgre_azkw",
         "host": "dpg-clfb5m58td7s73b8pac0-a.singapore-postgres.render.com",
         "dialect": "postgres",
+        "dialectModule": "pg",
         "dialectOptions": {
             "ssl": {
                 "require": true,
@@ -18,6 +19,7 @@
         "database": "dbpostgre_azkw",
         "host": "dpg-clfb5m58td7s73b8pac0-a.singapore-postgres.render.com",
         "dialect": "postgres",
+        "dialectModule": "pg",
         "dialectOptions": {
             "ssl": {
                 "require": true,
@@ -31,6 +33,7 @@
         "database": "dbpostgre_azkw",
         "host": "dpg-clfb5m58td7s73b8pac0-a.singapore-postgres.render.com",
         "dialect": "postgres",
+        "dialectModule": "pg",
         "dialectOptions": {
             "ssl": {
                 "require": true,
