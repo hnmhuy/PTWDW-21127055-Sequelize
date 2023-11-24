@@ -1,0 +1,29 @@
+{
+    "development": {
+        "username": "hnmhuy",
+        "password": "E1fCYYO8S0MWAZPwDkzj5PFewYQI7p9a",
+        "database": "dbpostgre_azkw",
+        "host": "dpg-clfb5m58td7s73b8pac0-a.singapore-postgres.render.com",
+        "dialect": "postgres",
+        "dialectOptions": {
+            "ssl": {
+                "require": true,
+                "rejectUnauthorized": false
+            }
+        }
+    },
+    "test": {
+        "username": "root",
+        "password": null,
+        "database": "database_test",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+    "production": {
+        "username": "root",
+        "password": null,
+        "database": "database_production",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    }
+}
