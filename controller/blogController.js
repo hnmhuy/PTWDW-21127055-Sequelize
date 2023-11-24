@@ -43,6 +43,7 @@ controller.showList = async (req, res) => {
             ],
             where: { categoryId: category },
         });
+
         res.render("index", {
             blogs: reProcessData(blogs),
             pagination: {
@@ -50,7 +51,6 @@ controller.showList = async (req, res) => {
                 limit: limit,
                 totalRows: count,
                 queryParams: { category: category },
-                paginationClass: "product__pagination blog__pagination",
             },
         });
     } else if (tag) {
@@ -85,7 +85,6 @@ controller.showList = async (req, res) => {
                 limit: limit,
                 totalRows: count,
                 queryParams: { tag: tag },
-                paginationClass: "product__pagination blog__pagination",
             },
         });
     } else if (keyword) {
@@ -115,7 +114,7 @@ controller.showList = async (req, res) => {
                     page: page,
                     limit: limit,
                     totalRows: count,
-                    paginationClass: "product__pagination blog__pagination",
+                    queryParams: { search: keyword },
                 },
             });
         } else {
@@ -125,7 +124,7 @@ controller.showList = async (req, res) => {
                     page: page,
                     limit: limit,
                     totalRows: count,
-                    paginationClass: "product__pagination blog__pagination",
+                    queryParams: { search: keyword },
                 },
             });
         }
@@ -154,7 +153,6 @@ controller.showList = async (req, res) => {
                 page: page,
                 limit: limit,
                 totalRows: count,
-                paginationClass: "product__pagination blog__pagination",
             },
         });
     }
