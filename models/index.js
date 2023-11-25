@@ -17,7 +17,17 @@ if (config.use_env_variable) {
         config.database,
         config.username,
         config.password,
-        config
+        {
+            host: config.host,
+            dialect: config.dialect,
+            dialectOptions: {
+                ssl: {
+                    require: true,
+                    rejectUnauthorized: false,
+                },
+            },
+            dialectModule: require("pg"),
+        }
     );
 }
 fs
