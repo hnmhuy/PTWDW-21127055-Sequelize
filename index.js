@@ -4,6 +4,8 @@ const port = 4000 | process.env.port;
 const expressHbs = require("express-handlebars");
 const paginate = require("express-handlebars-paginate");
 
+app.set("views", __dirname + "/views");
+
 app.use(express.static(__dirname + "/html"));
 app.engine(
     "hbs",
